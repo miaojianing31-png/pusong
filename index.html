@@ -2,11 +2,11 @@
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#286693">
   <meta name="description" content="唐山甫松商贸有限公司工业胶粘、密封与修复产品网页原型。">
   <title>唐山甫松商贸｜工业胶粘与设备修复</title>
   <style>
-    @font-face{font-family:"Fusong Sans";src:url("assets/fonts/NotoSansSC-VF.ttf") format("truetype");font-weight:100 900;font-style:normal;font-display:swap}
     :root{
       --blue:#286693;--sky:#63a7d3;--ink:#102b3a;--paper:#f3f4f0;--white:#fff;
       --muted:#687981;--line:rgba(16,43,58,.16);--blue-soft:#dceaf3;--red:#c84534;
@@ -15,7 +15,7 @@
     }
     *{box-sizing:border-box}
     html{scroll-behavior:smooth;background:var(--paper)}
-    body{margin:0;color:var(--ink);font-family:"Fusong Sans","Microsoft YaHei",sans-serif;background:var(--paper);font-size:16px;line-height:1.65;text-wrap:pretty;overflow-x:hidden}
+    body{margin:0;color:var(--ink);font-family:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC",sans-serif;background:var(--paper);font-size:16px;line-height:1.65;text-wrap:pretty;overflow-x:hidden}
     button,a{font:inherit}button{color:inherit}a{color:inherit;text-decoration:none}
     button:focus-visible,a:focus-visible{outline:3px solid var(--sky);outline-offset:4px}
     .shell{width:var(--page);margin-inline:auto}
@@ -23,12 +23,12 @@
     .topbar.scrolled{background:rgba(243,244,240,.92);backdrop-filter:blur(18px);color:var(--ink);border-color:var(--line)}
     .nav{height:100%;display:flex;align-items:center;justify-content:space-between;gap:32px}
     .brand-lockup{display:flex;align-items:center;gap:13px;min-width:230px}
-    .brand-symbol{width:48px;height:42px;position:relative;overflow:hidden;background-image:url("assets/fusong-brand/source-pages/company-01.png");background-size:176px 249px;background-position:-10px -137px;filter:saturate(.95)}
+    .brand-symbol{width:48px;height:42px;position:relative;overflow:hidden;background-image:url("assets/optimized/company-01-960.webp");background-size:176px 249px;background-position:-10px -137px;filter:saturate(.95)}
     .brand-name{font-weight:780;font-size:15px;line-height:1.15;letter-spacing:.02em}.brand-name small{display:block;font-size:9px;font-weight:500;letter-spacing:.1em;margin-top:5px;opacity:.72;text-transform:uppercase}
     .nav-links{display:flex;align-items:center;gap:34px;font-size:14px;font-weight:600}.nav-links a{position:relative}.nav-links a:after{content:"";height:1px;width:0;position:absolute;left:0;bottom:-8px;background:currentColor;transition:width .2s var(--ease)}.nav-links a:hover:after{width:100%}
     .nav-action{height:42px;display:inline-flex;align-items:center;gap:18px;border:1px solid currentColor;padding:0 18px;font-size:13px;font-weight:680}.nav-action:after{content:"↗";font-size:17px}
     .hero{min-height:820px;height:100svh;max-height:1080px;background:var(--blue);color:#fff;position:relative;overflow:hidden;display:grid;align-items:end}
-    .hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,44,66,.84) 0%,rgba(25,89,129,.75) 42%,rgba(40,102,147,.08) 73%),url("assets/fusong-brand/source-pages/company-01.png") 84% 47%/680px auto no-repeat;mix-blend-mode:normal}
+    .hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,44,66,.84) 0%,rgba(25,89,129,.75) 42%,rgba(40,102,147,.08) 73%),url("assets/optimized/company-01-1600.webp") 84% 47%/680px auto no-repeat;mix-blend-mode:normal}
     .hero:after{content:"";position:absolute;width:44vw;height:100%;right:-12vw;top:0;background:rgba(255,255,255,.08);transform:skewX(-24deg);transform-origin:bottom}
     .hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(420px,.95fr);gap:5vw;align-items:end;padding:150px 0 70px}
     .hero-copy{padding-bottom:clamp(20px,4vw,64px)}
@@ -56,11 +56,12 @@
     .contact{background:var(--blue);color:#fff;padding:110px 0 42px}.contact-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:7vw}.contact h2{font-size:clamp(50px,6vw,94px);letter-spacing:-.055em;line-height:1;margin:18px 0 35px}.contact h2 span{color:#cfe6f4;font-weight:300}.contact-list{border-top:1px solid rgba(255,255,255,.3)}.contact-row{display:grid;grid-template-columns:130px 1fr;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.2)}.contact-row span{font-size:12px;opacity:.6;text-transform:uppercase;letter-spacing:.12em}.contact-row b,.contact-row a{font-size:18px;font-weight:720}.contact-row a:hover{color:#d7edf8}.contact-side{align-self:end;display:grid;grid-template-columns:1fr 190px;gap:28px;align-items:end}.contact-guide p{color:rgba(255,255,255,.7);max-width:430px}.contact-guide .btn{margin-top:20px}.contact-qr{background:#fff;color:var(--ink);padding:10px}.contact-qr img{display:block;width:100%;height:auto}.contact-qr b{display:block;font-size:14px;padding:8px 4px 0}.contact-qr span{display:block;font-size:11px;color:var(--muted);padding:0 4px 4px}
     footer{display:flex;justify-content:space-between;gap:30px;padding-top:80px;font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:rgba(255,255,255,.55)}
     .tweaks-trigger{position:fixed;z-index:55;right:18px;bottom:18px;border:1px solid var(--line);background:rgba(243,244,240,.94);backdrop-filter:blur(10px);padding:10px 14px;font-size:10px;font-weight:750;letter-spacing:.15em;cursor:pointer}.tweaks{position:fixed;z-index:56;right:18px;bottom:18px;width:270px;background:var(--paper);border:1px solid var(--line);box-shadow:0 22px 70px rgba(16,43,58,.16);padding:20px;display:none}.tweaks.open{display:block}.tweaks-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}.tweaks-head b{font-size:12px;letter-spacing:.16em}.tweaks-head button{border:0;background:transparent;cursor:pointer}.tweak-label{font-size:11px;color:var(--muted);margin-bottom:8px}.tweak-options{display:grid;grid-template-columns:repeat(3,1fr);gap:5px}.tweak-option{border:1px solid var(--line);background:transparent;padding:8px 4px;font-size:11px;cursor:pointer}.tweak-option.active{background:var(--ink);color:#fff}.tweak-check{margin-top:16px;display:flex;align-items:center;justify-content:space-between;font-size:12px}.tweak-check input{accent-color:var(--blue)}
+    .mobile-dock{display:none}
     body[data-view="compact"]{--card-cols:4;--card-gap:14px}body[data-view="compact"] .product-card{min-height:450px}body[data-view="compact"] .product-media{height:260px}body[data-view="compact"] .product-info h3{font-size:20px}
     body[data-view="gallery"]{--card-cols:2;--card-gap:40px}body[data-view="gallery"] .product-card{min-height:650px}body[data-view="gallery"] .product-media{height:455px}
     body.no-motion *,body.no-motion *:before,body.no-motion *:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
     @media(max-width:1050px){:root{--page:min(100% - 40px,920px)}.nav-links{display:none}.hero{height:auto;max-height:none;min-height:980px}.hero-grid{grid-template-columns:1fr;padding-top:140px}.hero-copy{padding-bottom:0}.product-stage{height:480px;width:min(620px,100%)}.proof-strip{margin-top:0}.intro{grid-template-columns:1fr;gap:40px}.catalog-head{grid-template-columns:1fr}.product-grid{grid-template-columns:repeat(2,1fr)!important}.applications-grid{grid-template-columns:repeat(2,1fr)}.application:nth-child(2){border-right:0}.application:nth-child(-n+2){border-bottom:1px solid rgba(255,255,255,.2)}.about{grid-template-columns:1fr}.about-visual{aspect-ratio:16/9}.contact-grid{grid-template-columns:1fr}.contact-side{margin-top:40px;max-width:650px}}
-    @media(max-width:650px){:root{--page:calc(100% - 32px);--section:80px}.topbar{height:66px}.brand-lockup{min-width:0}.brand-name{font-size:13px}.nav-action{padding:0 12px}.hero{min-height:970px}.hero:before{background:linear-gradient(180deg,rgba(10,44,66,.9),rgba(40,102,147,.55)),url("assets/fusong-brand/source-pages/company-01.png") center/cover}.hero-grid{padding-top:130px}.kicker{font-size:10px}h1{font-size:52px}.hero-lead{font-size:16px}.product-stage{height:390px}.stage-plane{inset:8% 0}.proof-strip{grid-template-columns:1fr}.proof-item{padding:16px 0}.proof-item+.proof-item{border-left:0;border-top:1px solid rgba(255,255,255,.2);padding-left:0}.intro{padding-bottom:60px}.intro h2,.section-title{font-size:40px}.intro-copy{font-size:18px}.capabilities{grid-template-columns:1fr}.capability{padding:20px 0}.capability+.capability{border-left:0;border-top:1px solid var(--line);padding-left:0}.product-grid{grid-template-columns:1fr!important}.product-card{min-height:500px!important}.product-media{height:310px!important}.catalog-note{display:block}.catalog-note span{display:block;margin-top:8px}.applications-grid{grid-template-columns:1fr}.application{border-right:0!important;border-bottom:1px solid rgba(255,255,255,.2)!important}.about-visual{aspect-ratio:4/5}.contact-side{grid-template-columns:1fr}.contact-qr{width:min(220px,100%)}.contact-row{grid-template-columns:1fr;gap:6px}.contact h2{font-size:50px}footer{display:block}.tweaks{width:calc(100% - 36px)}}
+    @media(max-width:650px){:root{--page:calc(100% - 32px);--section:76px}body{padding-bottom:calc(66px + env(safe-area-inset-bottom))}.topbar{height:66px}.brand-lockup{min-width:0}.brand-name{font-size:13px}.brand-symbol{width:40px;height:36px;background-size:151px 213px;background-position:-8px -117px}.nav-action{min-height:44px;padding:0 12px}.hero{height:auto;min-height:0;max-height:none}.hero:before{background:linear-gradient(180deg,rgba(10,44,66,.94),rgba(40,102,147,.62)),url("assets/optimized/company-01-960.webp") center/cover}.hero-grid{padding:112px 0 38px;gap:24px}.hero-copy{padding:0}.kicker{font-size:9px}h1{font-size:clamp(46px,13.2vw,58px);margin:24px 0 24px}.hero-lead{font-size:16px;margin-bottom:26px}.actions{display:grid;grid-template-columns:1fr 1fr}.actions .btn{min-height:48px;padding:0 12px;font-size:13px}.product-stage{height:330px;width:100%;margin-top:4px}.stage-plane{inset:8% 0}.hero-product.one{width:49%;height:62%}.hero-product.two{width:50%;height:61%;right:0;bottom:18%}.hero-product.three{width:38%;height:43%;left:25%}.hero-index{display:none}.proof-strip{grid-template-columns:1fr;margin-top:8px}.proof-item{padding:14px 0}.proof-item+.proof-item{border-left:0;border-top:1px solid rgba(255,255,255,.2);padding-left:0}.intro{padding-bottom:56px;gap:26px}.intro h2,.section-title{font-size:38px}.intro-copy{font-size:18px;margin-bottom:32px}.capabilities{grid-template-columns:1fr}.capability{padding:18px 0}.capability+.capability{border-left:0;border-top:1px solid var(--line);padding-left:0}.catalog{padding-top:62px}.catalog-head{gap:22px}.filters{flex-wrap:nowrap;overflow-x:auto;margin:34px -16px 26px;padding:0 16px 8px;scrollbar-width:none}.filter{min-height:44px;white-space:nowrap}.product-grid{grid-template-columns:1fr!important}.product-card{min-height:0!important}.product-media{height:min(78vw,320px)!important}.product-media:before{opacity:1;transform:none}.product-info{padding:22px 20px 26px}.product-info h3{font-size:22px}.catalog-note{display:block}.catalog-note span{display:block;margin-top:8px}.applications-grid{grid-template-columns:1fr;margin-top:44px}.application{min-height:176px;border-right:0!important;border-bottom:1px solid rgba(255,255,255,.2)!important}.about-visual{aspect-ratio:4/5}.about-copy>p{font-size:16px}.about-quote{font-size:20px}.contact{padding-top:78px}.contact-side{grid-template-columns:1fr}.contact-qr{width:min(210px,100%)}.contact-row{grid-template-columns:1fr;gap:6px}.contact h2{font-size:46px}footer{display:block;padding-top:58px}.tweaks-trigger,.tweaks{display:none!important}.mobile-dock{position:fixed;z-index:60;display:grid;grid-template-columns:1fr 1fr;left:0;right:0;bottom:0;padding:8px 12px calc(8px + env(safe-area-inset-bottom));background:rgba(243,244,240,.96);backdrop-filter:blur(14px);border-top:1px solid var(--line);gap:8px}.mobile-dock a{min-height:48px;display:flex;align-items:center;justify-content:center;border:1px solid var(--ink);font-size:13px;font-weight:750}.mobile-dock a:last-child{background:var(--ink);color:#fff}}
     @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation-duration:.001ms!important;transition-duration:.001ms!important}}
   </style>
 </head>
@@ -89,9 +90,9 @@
         </div>
         <div class="product-stage" aria-label="甫松重点工业产品">
           <div class="stage-plane"></div>
-          <img class="hero-product one" src="assets/fusong-brand/products/甫松/psFS-602s.png" alt="甫松 FS-602S 高温导电修补剂">
-          <img class="hero-product two" src="assets/fusong-brand/products/天朔/TS363.png" alt="天朔 TS363 输送带修补胶">
-          <img class="hero-product three" src="assets/fusong-brand/products/卫仕力/wlsWP9001.png" alt="卫仕力 WP9001 高强度橡胶修补剂">
+          <img class="hero-product one" src="assets/optimized/products/fs-fs602s-640.webp" srcset="assets/optimized/products/fs-fs602s-640.webp 640w, assets/optimized/products/fs-fs602s-1200.webp 1200w" sizes="(max-width:650px) 48vw, 24vw" width="640" height="640" decoding="async" fetchpriority="high" onerror="this.onerror=null;this.removeAttribute('srcset');this.src='assets/fusong-brand/products/甫松/psFS-602s.png'" alt="甫松 FS-602S 高温导电修补剂">
+          <img class="hero-product two" src="assets/optimized/products/ts-363-640.webp" srcset="assets/optimized/products/ts-363-640.webp 640w, assets/optimized/products/ts-363-1200.webp 1200w" sizes="(max-width:650px) 50vw, 24vw" width="640" height="640" decoding="async" fetchpriority="high" onerror="this.onerror=null;this.removeAttribute('srcset');this.src='assets/fusong-brand/products/天朔/TS363.png'" alt="天朔 TS363 输送带修补胶">
+          <img class="hero-product three" src="assets/optimized/products/wls-wp9001-640.webp" srcset="assets/optimized/products/wls-wp9001-640.webp 640w, assets/optimized/products/wls-wp9001-1200.webp 1200w" sizes="(max-width:650px) 38vw, 18vw" width="640" height="640" decoding="async" fetchpriority="high" onerror="this.onerror=null;this.removeAttribute('srcset');this.src='assets/fusong-brand/products/卫仕力/wlsWP9001.png'" alt="卫仕力 WP9001 高强度橡胶修补剂">
           <span class="hero-index">Real supplied product imagery · 01—03</span>
         </div>
         <div class="proof-strip">
@@ -143,7 +144,7 @@
     </section>
 
     <section class="shell about" id="about">
-      <div class="about-visual"><img src="assets/fusong-brand/source-pages/company-05.png" alt="唐山甫松商贸有限公司简介资料"></div>
+      <div class="about-visual"><img src="assets/optimized/company-05-720.webp" srcset="assets/optimized/company-05-720.webp 720w, assets/optimized/company-05-1200.webp 1200w" sizes="(max-width:1050px) calc(100vw - 40px), 46vw" width="720" height="960" loading="lazy" decoding="async" alt="唐山甫松商贸有限公司简介资料"></div>
       <div class="about-copy"><div class="section-id">04 / About Fusong</div><h2>深耕工业胶粘，<br>也理解维护现场。</h2><p>唐山甫松商贸有限公司专注于工业胶粘剂、密封胶、修补胶剂的研发销售，为制造业、汽车、电子、工厂等行业场所提供高强度、耐候性的粘接与密封解决方案，助力企业提升生产效能与产品可靠性。</p><div class="about-quote">精准粘接 · 牢固密封 · 高效修复</div></div>
     </section>
 
@@ -151,7 +152,7 @@
       <div class="shell">
         <div class="contact-grid">
           <div><div class="section-id" style="color:#bfe1f4">05 / Contact</div><h2>把工况告诉我们，<br><span>一起缩短停机时间。</span></h2></div>
-          <div class="contact-side"><div class="contact-guide"><p>提供设备材质、工作温度、接触介质与损伤情况，有助于更准确地进行产品选型。</p><a class="btn primary" href="tel:4008506001">拨打服务热线</a></div><div class="contact-qr"><img src="assets/fusong-brand/contact/wechat-glue.jpg" alt="微信 Glue 二维码"><b>微信咨询</b><span>扫码添加 Glue</span></div></div>
+          <div class="contact-side"><div class="contact-guide"><p>提供设备材质、工作温度、接触介质与损伤情况，有助于更准确地进行产品选型。</p><a class="btn primary" href="tel:4008506001">拨打服务热线</a></div><div class="contact-qr"><img src="assets/fusong-brand/contact/wechat-glue.jpg" width="888" height="1118" loading="lazy" decoding="async" alt="微信 Glue 二维码"><b>微信咨询</b><span>扫码添加 Glue</span></div></div>
         </div>
         <div class="contact-list">
           <div class="contact-row"><span>服务热线</span><a href="tel:4008506001">4008-506-001</a></div><div class="contact-row"><span>联系电话 01</span><a href="tel:18633965319">18633965319</a></div><div class="contact-row"><span>联系电话 02</span><a href="tel:18531592585">18531592585</a></div><div class="contact-row"><span>联系电话 03</span><a href="tel:13001813574">13001813574</a></div><div class="contact-row"><span>Email</span><a href="mailto:295024779@qq.com">295024779@qq.com</a></div><div class="contact-row"><span>Address</span><b>河北省唐山市路南区花园里</b></div>
@@ -168,6 +169,7 @@
     <div class="tweak-options"><button class="tweak-option active" data-view="standard">标准</button><button class="tweak-option" data-view="compact">紧凑</button><button class="tweak-option" data-view="gallery">展陈</button></div>
     <label class="tweak-check"><span>减少动态效果</span><input type="checkbox" id="motionToggle"></label>
   </aside>
+  <nav class="mobile-dock" aria-label="手机快捷联系"><a href="#products">查看产品</a><a href="tel:4008506001">电话咨询</a></nav>
 
   <script src="assets/js/products.js"></script>
   <script>
@@ -177,7 +179,9 @@
       grid.innerHTML="";
       products.filter(p=>filter==="all"||p.brand===filter).forEach((p,index)=>{
         const card=document.createElement("article");card.className="product-card";
-        card.innerHTML=`<a class="product-media" data-code="${p.model}" href="product.html?id=${p.id}" aria-label="查看 ${p.brand} ${p.model} ${p.name} 详情"><img src="${p.image}" alt="${p.brand} ${p.model} ${p.name}"></a><div class="product-info"><div class="product-meta"><span>${p.brand} · ${p.category}</span><span>${String(index+1).padStart(2,"0")}</span></div><h3>${p.model} ${p.name}</h3><p>${p.short}</p><a class="product-more" href="product.html?id=${p.id}">进入产品详情</a></div>`;
+        const mobileImage=`assets/optimized/products/${p.id}-640.webp`;
+        const desktopImage=`assets/optimized/products/${p.id}-1200.webp`;
+        card.innerHTML=`<a class="product-media" data-code="${p.model}" href="product.html?id=${p.id}" aria-label="查看 ${p.brand} ${p.model} ${p.name} 详情"><img src="${mobileImage}" srcset="${mobileImage} 640w, ${desktopImage} 1200w" sizes="(max-width:650px) calc(100vw - 32px), (max-width:1050px) 44vw, 29vw" width="640" height="640" loading="lazy" decoding="async" onerror="this.onerror=null;this.removeAttribute('srcset');this.src='${p.image}'" alt="${p.brand} ${p.model} ${p.name}"></a><div class="product-info"><div class="product-meta"><span>${p.brand} · ${p.category}</span><span>${String(index+1).padStart(2,"0")}</span></div><h3>${p.model} ${p.name}</h3><p>${p.short}</p><a class="product-more" href="product.html?id=${p.id}">进入产品详情</a></div>`;
         grid.appendChild(card);
       });
     }

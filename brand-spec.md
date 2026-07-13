@@ -1,4 +1,4 @@
-# 唐山甫松商贸有限公司 · Brand Spec (v1)
+# 唐山甫松商贸有限公司 · Brand Spec (v2 Responsive)
 
 ## Source of truth
 
@@ -14,7 +14,8 @@
 - Contact / Tmall QR source: `assets/fusong-brand/source-pages/company-26.png`
 - WeChat contact QR supplied by user: `assets/fusong-brand/contact/wechat-glue.jpg`
 - Product imagery: `assets/fusong-brand/products/<brand>/`
-- Local webfont: `assets/fonts/NotoSansSC-VF.ttf`
+- Responsive WebP product images: `assets/optimized/products/<product-id>-640.webp` and `-1200.webp`
+- Responsive company imagery: `assets/optimized/company-*.webp`
 - User-provided product-detail reference: `assets/references/source-product.html`
 - Shared product dataset for the 18 detail experiences: `assets/js/products.js`
 
@@ -40,8 +41,16 @@ Product detail architecture: the catalog links to one data-driven `product.html?
 - Signal red: `#C84534` (only where it already appears on product packaging or for urgent state)
 - Base grid: 8px
 - Radius grammar: 0 / 2px / 999px only for controls
-- Type: Noto Sans SC Variable; compact uppercase Latin metadata
+- Type: Microsoft YaHei / PingFang SC / Noto Sans CJK SC device stack; compact uppercase Latin metadata
 - Motion: 180–620ms, cubic-bezier(.2,.75,.25,1), reduced-motion fallback
+
+## Responsive delivery
+
+- Desktop: full hero composition, three-column catalog, complete product and company imagery.
+- Tablet: two-column catalog with the same content and navigation contracts.
+- Mobile: one-column catalog, 44px+ touch targets, persistent product/contact dock, safe-area support.
+- Product images use 640px and 1200px WebP `srcset` variants; catalog and footer imagery lazy-load below the fold.
+- The former 17.8MB local font is intentionally removed so mobile users can see content immediately.
 
 ## Contact facts from supplied profile
 
